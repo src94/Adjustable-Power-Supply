@@ -452,8 +452,6 @@ Wire Wire Line
 	950  1750 950  2000
 Wire Wire Line
 	950  2550 950  2300
-Wire Wire Line
-	2100 2450 950  2450
 Connection ~ 950  2450
 $Comp
 L GND #PWR09
@@ -770,4 +768,19 @@ Wire Wire Line
 Connection ~ 6050 3300
 Text Notes 1350 6400 0    60   ~ 0
 V: 7.8-39V\nA: 0-5A
+$Comp
+L R R12
+U 1 1 59C7D0F7
+P 1350 2450
+F 0 "R12" V 1430 2450 50  0000 C CNN
+F 1 "100" V 1350 2450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1280 2450 50  0001 C CNN
+F 3 "" H 1350 2450 50  0001 C CNN
+	1    1350 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 2450 950  2450
+Wire Wire Line
+	1500 2450 2100 2450
 $EndSCHEMATC
